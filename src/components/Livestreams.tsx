@@ -49,6 +49,7 @@ export const Livestreams = () => {
             </span>
             {platforms.map((platform, index) => (
               <button
+                key={index}
                 onClick={() => setActivePlatform(platform)}
                 type="button"
                 className={`inline-flex justify-center items-center gap-4 rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white shadow-sm ${
